@@ -1,12 +1,22 @@
 import { Component } from '@angular/core';
 
+type Categoria = {
+  title: string
+  name: string
+  color: string
+}
+
 @Component({
   selector: 'app-content-cabecera',
   templateUrl: './content-cabecera.component.html',
   styleUrls: ['./content-cabecera.component.css']
 })
 export class ContentCabeceraComponent {
-  title1 : string = "Add expense to";
-  title2 : string = "Groceries";
+  
+  category: Categoria = {
+    title: 'Add expense to',
+    name: 'Groceries',
+    color: '#00c2dd'
+  };
 
 }
